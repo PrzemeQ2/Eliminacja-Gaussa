@@ -29,6 +29,6 @@ int main(int argc, char ** argv) {
 
 	freeMatrix(A);
 	freeMatrix(b);
-
+	printf("hello world\n");
 	return 0;
 }
