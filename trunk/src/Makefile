@@ -11,7 +11,7 @@ gauss.o: gauss.c
 backsubst.o: backsubst.c
 	gcc -c backsubst.c
 
-final: 
+final: backsubst.o gauss.o mat_io.o main.o
 	gcc mat_io.o gauss.o backsubst.o main.o
 
 clean: 
